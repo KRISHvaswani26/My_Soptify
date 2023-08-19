@@ -511,6 +511,12 @@ body
     }
 }
 
+/*extra code  */
+
+.home:hover {
+    color: white;
+    transition: color 1s;
+}
 
 
 input[type = 'checkbox']
