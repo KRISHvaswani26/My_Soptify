@@ -11,11 +11,14 @@ let song_items = Array.from(document.getElementsByClassName('songsss'));
 let songheader = document.querySelector('.songhead');
 let likee = document.querySelector('.like');
 let epp = document.querySelector('.epp');
-// let namee = document.querySelector('.names');
 let hom = document.querySelector('.home');
 let ser = document.querySelector('.search');
 let pp = document.querySelector('.play_pause');
 let vl = document.querySelector('#vl');
+let duration = document.querySelector('.times');
+let bat = document.querySelector('.bat');
+let singer = document.querySelector('.singer_name');
+let name_song = document.querySelector('.song-name');
 let songs =
     [
         { song_name: "Todh", File_path: "songs/song1.mp3", cover_path: src = "pics/song1.png ", cast_name: "Prince Narula , Munawar Faruqui ", time_update: `3:56` },
@@ -106,6 +109,11 @@ function toggle_fun(mycheck) {
         ser.style.color = 'black';
         pp.style.color = 'black';
         vl.style.color = 'black';
+        duration.style.color = 'black';
+        bat.style.color = 'black';
+        singer.style.color = 'black';
+        name_song.style.color = 'black';
+
     }
     else {
         tog_body.style.paddingLeft = ('0rem');
@@ -130,9 +138,12 @@ function toggle_fun(mycheck) {
         epp.style.color = "white";
         hom.style.color = '#5f5f5f';
         ser.style.color = '#5f5f5f';
-        pp.style.color = 'white'
-        vl.style.color = 'white'
-
+        pp.style.color = 'white';
+        vl.style.color = 'white';
+        duration.style.color = 'white';
+        bat.style.color = 'white';
+        singer.style.color = '#21e617';
+        name_song.style.color = '#21e617';
     }
 }
 
@@ -143,6 +154,7 @@ function toggle_fun(mycheck) {
 
 Array.from(document.getElementsByClassName('songdata')).forEach((element, i) => {
     element.addEventListener('click', (e) => {
+        console.log(e.target);
         song_index = parseInt(e.target.id);
         // console.log(`song${song_index}`);
         play_pause_btn.classList.remove('fa-circle-play');
@@ -155,6 +167,7 @@ Array.from(document.getElementsByClassName('songdata')).forEach((element, i) => 
         document.getElementsByClassName('singer_name')[0].innerHTML = songs[i].cast_name;
     })
 });
+
 
 // -----------------------------------------------------------------------------------------------------------------------------
 
