@@ -84,11 +84,6 @@ body
 {
     font-size: 0.7rem;
 }
-.singer_name:hover
-{
-    font-style: underline;
-}
-
 
 /* -------------------------------------------MAIN SEEK BAR WORK----------------------------------? */
 
@@ -243,8 +238,8 @@ body
 .sub_box2 div img {
     border-radius: 10px;
     margin-right: 0.5rem;
-    height: 8vh;
-    width: 8vh;
+    height: 7vh;
+    width: 7vh;
 }
 
 
@@ -253,8 +248,8 @@ body
 .sub_box3 div img {
     border-radius: 10px;
     margin-right: 0.5rem;
-    height: 8vh;
-    width: 8vh;
+    height: 7vh;
+    width: 7vh;
 }
 
 .sub_box3:hover {
@@ -321,7 +316,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     font-weight: bolder;
 }
 
@@ -353,7 +348,7 @@ body
 
 .songname
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0.1rem;
 }
 .castname
@@ -361,10 +356,6 @@ body
     font-size: 0.7rem;
 }
 
-.times
-{
-    color: black;
-}
 
 /* ------------------DAY NIGHT TOGGLE BUTTON----------------------- */
 
@@ -392,9 +383,9 @@ body
     /* padding-left: 10px; */
 }
 
+/* --------------------------------------------- Making Resposive desigen and all media quearyss -------------------------------------------------------- */
 
-
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .list{
         display: none;
     }
@@ -403,19 +394,124 @@ body
     {
         justify-content: center;
     }
+
+    .togbody{
+        height: 2rem;
+        width: 3rem;
+    }
+    .switch{
+        height: 2rem;
+        width: 2rem;
+    }
+    .seek_bar{
+        width: 50vw;
+    }
+
+    .sub_box2 div img{
+        height: 6vh;
+        width: 6vh;
+    }
+    .sub_box3 div img{
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .like
+    {
+        font-size: 0.8rem;
+    }
+    .epp
+    {
+        font-size: 0.8rem;
+    }
+    .hom2
+    {
+        font-size: 0.8rem;
+    }
+    .search1
+    {
+        font-size: 0.8rem;
+    }
+    .volume_bar
+    {
+        width: 7vw;
+    }
 }
 
 @media (max-width : 1450px )
 {
-    .singer_name{
-        display: none;
-    }
 
     .volume_bar
     {
-        width: 6vw;
+        width: 7vw;
     }
 }
+
+
+@media (max-width : 1200px )
+{
+    .seek_bar{
+        width: 55vw;
+    }
+
+    /* .songhead{
+        font-size: 1.5rem;
+    } */
+
+
+}
+@media (max-width : 1400px )
+{
+.song-name
+{
+        font-size: 0.7rem;
+}
+.singer_name
+{
+    font-size: 0.5rem;
+}
+}
+
+
+@media (max-width : 1300px )
+{
+
+.singer_name
+{
+    display: none;
+}
+}
+
+@media (max-width : 650px )
+{
+
+.hom{
+    padding-right: 5px; ;
+    margin-right: 5px;
+}
+.serlogo{
+    padding-right: 5px; ;
+    margin-right: 5px;
+}
+.yourlist
+{
+    font-size: 0.8rem;
+}
+.seek_bar
+    {
+        width: 20vw;
+    }
+}
+
+@media (max-width : 770px )
+{
+    .seek_bar
+    {
+        width: 45vw;
+    }
+}
+
+
 
 input[type = 'checkbox']
 {
