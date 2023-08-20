@@ -177,6 +177,10 @@ body
     color: white;
     transition: color 1s;
 }
+.home:hover {
+    color: white;
+    transition: color 1s;
+}
 
 
 
@@ -385,7 +389,13 @@ body
 
 /* --------------------------------------------- Making Resposive desigen and all media quearyss -------------------------------------------------------- */
 
+
 @media (max-width: 850px) {
+    .songsss
+    {
+        width: 74vw;
+    }
+
     .list{
         display: none;
     }
@@ -511,12 +521,108 @@ body
     }
 }
 
-/*extra code  */
 
-.home:hover {
-    color: white;
-    transition: color 1s;
+@media (max-width : 420px )
+{
+
+
+
+
+    .box1{
+        display: none;
+        position: relative;
+    }
+
+    .box2
+    {
+        position: relative;
+        display:none ;
+    }
+
+    .container{
+        grid-template-columns: 0vw 1fr;
+        grid-template-rows: 0rem 1fr;
+        gap: 0px 0px;
+    }
+
+
+.sound_bar  {
+    padding: 1rem;
 }
+
+
+.seekplay {
+    margin: 0rem;
+}
+
+.seek_bar {
+    width: 44vw;
+}
+
+.volume_bar {
+    width: 14vw;
+}
+
+.container
+{
+    padding: 0;
+}
+
+.songsss {
+    width: 92vw;
+    height: 8vh;
+    padding: 0rem 1rem;
+}
+
+.songnum {
+    display: none;
+}
+
+.songimg img {
+    margin: 0rem;
+    height: 4vh;
+    width: 4vh;
+}
+
+
+.castname {
+    font-size: 0.6rem;
+
+}
+
+.splogo img {
+    height: 8vh;
+    width: 20vw;
+}
+.songhead {
+    font-size: 1.5rem;
+}
+
+.togbody {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 input[type = 'checkbox']
